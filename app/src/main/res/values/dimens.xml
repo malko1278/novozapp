@@ -1,0 +1,13 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="decalle">10dp</dimen>
+    <dimen name="item_list_horizontal_margin">35dp</dimen>
+
+    <dimen name="map_control">44dp</dimen>
+    <dimen name="map_control_radius">22dp</dimen>
+    <dimen name="dialog_radius">8dp</dimen>
+
+    <dimen name="card_radius">8dp</dimen>
+    <dimen name="spacing_xsmall">2dp</dimen>
+    <dimen name="spacing_medium">4dp</dimen>
+</resources>

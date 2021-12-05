@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cell_content"
+    android:visibility="visible"
+    android:orientation="vertical" >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        card_view:cardElevation="10dp"
+        card_view:cardCornerRadius="@dimen/card_radius" >
+
+        <!-- content header image -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp" >
+
+            <ImageView
+                android:id="@+id/principal_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/image_principal_monut" />
+
+            <!--
+            <TextView
+                android:id="@+id/head_image_left_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:paddingBottom="10dp"
+                style="@style/Content.Image.Badge.Title"
+                android:text="@string/requests_count_mock"
+                android:layout_alignStart="@id/principal_image"
+                android:layout_alignBottom="@id/principal_image" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                style="@style/Content.Image.Badge.Title"
+                android:text="@string/requests_count_badge"
+                android:layout_above="@id/head_image_left_text"
+                android:layout_alignStart="@id/head_image_left_text" />
+
+
+            <TextView
+                android:id="@+id/head_image_right_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="20dp"
+                android:paddingBottom="10dp"
+                android:text="@string/weight_mock"
+                style="@style/Content.Image.Badge.Title"
+                android:layout_alignEnd="@id/principal_image"
+                android:layout_alignBottom="@id/principal_image" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/weight_badge"
+                style="@style/Content.Image.Badge.Title"
+                android:layout_above="@id/head_image_right_text"
+                android:layout_alignStart="@id/head_image_right_text" />
+
+            <TextView
+                android:id="@+id/head_image_center_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="10dp"
+                android:text="@string/pledge_mock"
+                style="@style/Content.Image.Badge.Title"
+                android:layout_alignBottom="@id/principal_image" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pledge_badge"
+                style="@style/Content.Image.Badge.Title"
+                android:layout_above="@id/head_image_center_text"
+                android:layout_alignStart="@id/head_image_center_text" />
+            -->
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- content body layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp" >
+
+        <!-- avatar and name part -->
+        <!--
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/content_avatar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="RtlCompat"
+                android:layout_marginStart="6dp"
+                android:layout_marginBottom="5dp"
+                android:layout_alignParentStart="true"
+                style="@style/Content.Main.Badge.Title"
+                android:text="@string/monument_architect" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/content_avatar_architect"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image_event"
+                android:elevation="@dimen/fab_margin"
+                android:layout_below="@id/content_avatar_title" />
+
+            <TextView
+                android:id="@+id/content_name_architect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginStart="10dp"
+                android:text="@string/client_name_mock"
+                android:textColor="@color/main_text_color"
+                android:layout_toEndOf="@id/content_avatar_architect"
+                android:layout_alignTop="@id/content_avatar_architect" />
+
+            <ImageView
+                android:id="@+id/about_architect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/keyboard_arrow_right"
+                android:contentDescription="@string/image_principal_monut" />
+
+        </RelativeLayout>
+        -->
+
+        <!-- divider line -->
+        <View
+            style="@style/list.Divider"
+            android:layout_width="fill_parent"
+            android:layout_height="1sp"
+            android:elevation="1dp"/>
+
+        <!-- Description part -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/title_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                tools:ignore="RtlCompat"
+                android:text="@string/description_title"
+                android:textColor="@color/text_color_night"
+                android:layout_marginBottom="@dimen/spacing_medium"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+            <TextView
+                android:id="@+id/description_monument"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textSize="14sp"
+                tools:ignore="RtlCompat"
+                android:textStyle="normal"
+                android:layout_marginEnd="25dp"
+                android:layout_marginStart="5dp"
+                android:layout_alignParentEnd="true"
+                android:text="@string/small_description"
+                android:textColor="@color/text_color_night"
+                android:layout_below="@+id/title_description"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <ImageView
+                android:id="@+id/show_all_description"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="5dp"
+                android:scaleType="centerCrop"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/keyboard_arrow_down"
+                android:background="@drawable/btn_feed_action"
+                android:contentDescription="@string/show_description" />
+
+        </RelativeLayout>
+
+        <!-- divider line -->
+        <View
+            style="@style/list.Divider"
+            android:layout_width="fill_parent"
+            android:layout_height="1sp"
+            android:elevation="1dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="6dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

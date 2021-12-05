@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="RtlCompat"
+    card_view:cardElevation="6dp"
+    android:layout_gravity="bottom"
+    android:layout_marginLeft="3dp"
+    android:layout_marginRight="3dp"
+    card_view:cardCornerRadius="7dp"
+    android:layout_marginBottom="3dp" >
+
+    <RelativeLayout
+        android:id="@+id/view_meteo"
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:paddingTop="15dp"
+        android:background="@drawable/n" >
+
+        <ImageView
+            android:id="@+id/fra_home_weather_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/fra_home_weather_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textColor="@android:color/white"
+            android:layout_alignTop="@id/fra_home_weather_icon"
+            android:layout_toEndOf="@id/fra_home_weather_icon" />
+
+        <TextView
+            android:id="@+id/fra_home_weather_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="19sp"
+            android:textColor="@android:color/white"
+            android:layout_below="@id/fra_home_weather_temp"
+            android:layout_toEndOf="@id/fra_home_weather_icon" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentEnd="true" >
+
+            <ImageView
+                android:id="@+id/fra_home_no_weather_icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:visibility="invisible"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_no_weather"/>
+
+            <TextView
+                android:id="@+id/fra_home_no_weather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:visibility="invisible"
+                android:text="@string/no_weather"
+                android:textColor="@android:color/white"
+                android:layout_below="@id/fra_home_no_weather_icon" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

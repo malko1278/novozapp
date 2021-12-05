@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/header_line"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp"
+    android:background="@color/quantum_grey_600" >
+
+    <!--
+    <ImageView
+        android:id="@+id/btn_likes"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:padding="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/heart_outline_grey"
+        android:background="@drawable/btn_feed_action"
+        android:contentDescription="@string/like_monument" />
+
+    <TextView
+        android:id="@+id/monument_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="@string/city_name"
+        android:layout_centerVertical="true"
+        android:textColor="@color/berge_color"
+        android:layout_centerHorizontal="true" />
+    -->
+
+    <ImageView
+        android:id="@+id/btn_show_hide"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:padding="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/keyboard_arrow_down"
+        android:background="@drawable/btn_feed_action"
+        android:contentDescription="@string/like_monument" />
+
+    <!--<com.balysv.materialripple.MaterialRippleLayout
+        android:id="@+id/content_btn_show_hide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:mrl_rippleAlpha="0.2"
+        android:padding="5dp"
+        app:mrl_rippleHover="true"
+        app:mrl_rippleOverlay="true"
+        app:mrl_rippleColor="#ffffff"
+        app:mrl_rippleDelayClick="false"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true">
+
+    </com.balysv.materialripple.MaterialRippleLayout>-->
+    
+</RelativeLayout>

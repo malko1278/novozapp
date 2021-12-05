@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainMapActivity"
+    android:background="@color/purple_700" >
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar_view_meteo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:expanded="true"
+        android:fitsSystemWindows="true"
+        android:background="@color/purple_500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_search"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:layout_collapseMode="pin"
+            android:visibility="gone"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" >
+
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include
+        layout="@layout/frag_map_city"
+        android:id="@+id/include_frag_map" />
+
+    <include
+        layout="@layout/search_location"
+        android:id="@+id/include_search_location" />
+
+    <!--
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/zoom_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="mini"
+        app:elevation="6dp"
+        android:layout_marginEnd="8dp"
+        app:backgroundTint="@color/white"
+        app:srcCompat="@drawable/zoom_in"
+        android:layout_above="@id/zoom_out"
+        android:layout_alignParentRight="true" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/zoom_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="mini"
+        app:elevation="6dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:backgroundTint="@color/white"
+        android:layout_marginBottom="8dp"
+        app:srcCompat="@drawable/zoom_out"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="mini"
+        app:elevation="6dp"
+        android:layout_marginEnd="8dp"
+        app:backgroundTint="@color/white"
+        app:srcCompat="@drawable/location"
+        android:layout_below="@id/zoom_out"
+        android:layout_alignParentEnd="true" />
+     -->
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/hide_search_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="mini"
+        app:elevation="6dp"
+        app:backgroundTint="@color/white"
+        app:srcCompat="@drawable/east_back"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:layout_marginStart="@dimen/fab_margin" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/show_search_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="mini"
+        app:elevation="6dp"
+        app:backgroundTint="@color/white"
+        app:srcCompat="@drawable/search_black"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:layout_marginEnd="@dimen/fab_margin" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/hide_view_meteo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="mini"
+        app:elevation="6dp"
+        app:backgroundTint="@color/white"
+        app:srcCompat="@drawable/arrow_down_black"
+        android:layout_above="@id/container_content"
+        android:layout_marginStart="@dimen/fab_margin"
+        android:contentDescription="@string/close_float_toolbar" />
+
+    <RelativeLayout
+        android:id="@+id/container_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <include
+            android:id="@+id/fragment_tourisme"
+            layout="@layout/content_fragment" />
+
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/show_view_meteo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="mini"
+        app:elevation="6dp"
+        app:backgroundTint="@color/white"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        app:srcCompat="@drawable/arrow_up_black"
+        android:layout_margin="@dimen/fab_margin"
+        android:contentDescription="@string/open_float_toolbar" />
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linear_search"
+    android:layout_marginTop="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:background="@drawable/layout_arrond">
+
+    <AutoCompleteTextView
+        android:id="@+id/auto_search_location"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:textSize="18sp"
+        android:dropDownWidth="match_parent"
+        android:completionThreshold="1"
+        android:textColor="@color/black"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:dropDownSelector="@color/teal_200"
+        android:popupBackground="@color/berge_color" />
+
+</LinearLayout>

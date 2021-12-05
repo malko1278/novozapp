@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="110dp"
+    tools:ignore="RtlCompat"
+    card_view:cardElevation="0dp"
+    android:orientation="vertical"
+    android:layout_marginLeft="3dp"
+    android:layout_marginRight="3dp"
+    card_view:cardCornerRadius="7dp"
+    android:id="@+id/content_interface"
+    android:layout_gravity="bottom|start"
+    android:layout_centerHorizontal="true"
+    card_view:cardBackgroundColor="@android:color/transparent" >
+
+    <include
+        layout="@layout/tourism"
+        android:id="@+id/include_tourisme" />
+
+</androidx.cardview.widget.CardView>

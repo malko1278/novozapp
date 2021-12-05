@@ -1,0 +1,2 @@
+rootProject.name = "Novoz App"
+include ':app'
